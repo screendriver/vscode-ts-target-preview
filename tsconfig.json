@@ -1,8 +1,14 @@
 {
   "compilerOptions": {
+    "outDir": "out",
     "module": "commonjs",
     "target": "es2015",
-    "outDir": "out",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "downlevelIteration": true,
     "sourceMap": true,
     "rootDir": "."
   },
