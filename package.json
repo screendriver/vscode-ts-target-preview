@@ -1,0 +1,38 @@
+{
+  "name": "vscode-ts-target-preview",
+  "displayName": "TypeScript target preview",
+  "description": "Preview transpiled TypeScript code depending on the ECMAScript target version",
+  "version": "0.0.1",
+  "publisher": "LocusHeap",
+  "engines": {
+    "vscode": "^1.12.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.sayHello"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^7.0.23",
+    "mocha": "^3.4.2",
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0"
+  }
+}
