@@ -1,5 +1,3 @@
-describe('test', () => {
-  it('should do anything', () => {
-
-  })
-})
+describe("test", () => {
+  it("should do anything", () => {});
+});

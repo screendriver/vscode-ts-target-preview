@@ -1,11 +1,14 @@
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  const disposable = vscode.commands.registerCommand('extension.preview', () => {
-    vscode.window.showInformationMessage('Hello World!');
-  });
+  const disposable = vscode.commands.registerCommand(
+    "extension.preview",
+    () => {
+      vscode.window.showInformationMessage("Hello World!");
+    }
+  );
 
   context.subscriptions.push(disposable);
 }
 
-export function deactivate() { }
+export function deactivate() {}
